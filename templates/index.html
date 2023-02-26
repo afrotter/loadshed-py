@@ -2,8 +2,23 @@
 <html>
   <head>
     <title>Display Eskom Response in HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      body  {
+        background-color: #1abc9c;
+        font-family: Roboto;
+        font-size: 24px;
+        color: white;
+      }
+            
+    </style>
   </head>
   <body>
-    <p>Eskom is currently loadshedding on Stage {{ loadshedding_status-1 }}</p>
+    <div>
+       <h1><img src="https://cdn-icons-png.flaticon.com/512/2961/2961545.png" width="50" height="50">Eskom is currently loadshedding on <strong>Stage {{ loadshedding_status-1 }}</strong></h1>
+    </div>
   </body>
 </html>
